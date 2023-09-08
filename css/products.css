@@ -1,6 +1,7 @@
-.products__list .product-card {
+.products .product-card {
     border: 1px solid var(--border-color);
     padding: 5px;
+    margin: 5px;
 }
 
 .product-card__buttons {
@@ -10,21 +11,26 @@
 }
 
 @media (min-width: 600px) {
+    
     .products__list {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 5px;
     }
+
 }
 
 @media (min-width: 900px) {
+    
     .products__list {
         grid-template-columns: 1fr 1fr 1fr;
     }
+
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
+    
     .products__list {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+
 }
